@@ -154,7 +154,8 @@ def kron_prod(Wx, Wy, v):
 
     def body_func(carry, k):
 
-        f_ = jnp.dot(v, col_slice_kron(Wy, Wx, k))[0]
+#        f_ = jnp.dot(v, col_slice_kron(Wy, Wx, k))[0]
+        f_ = jnp.dot(v, col_slice_kron(Wx, Wy, k))[0]
         
         return carry, f_
 
