@@ -38,7 +38,7 @@ Step3) Install package
 ```
 pip install .
 or
-pip install . -e
+pip install -e .
 ```
 
 Or just copying these two files into your directory might be enough in many cases...
